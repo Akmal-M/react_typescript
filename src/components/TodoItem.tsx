@@ -9,7 +9,7 @@ const TodoItem: FC<TodoItemProps> = ({todo}) => {
     return (
     <div>
         <div style={{padding: 15, border: '1px solid gray'}}>
-            <input type="checkbox" checked={todo.completed}/>
+            <input readOnly type="checkbox" checked={todo.completed}/>
             {todo.id}. {todo.title}
         </div>
     </div>
